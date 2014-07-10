@@ -155,7 +155,7 @@ header nav a {
     margin-left: 25px;
     transition: all 0.2s ease 0s;
     padding: 7px 15px;
-    font-weight: 500;
+    font-weight: 600;
     display: block;
     float: left;
 }
@@ -175,13 +175,15 @@ header nav a:hover {
    landing
    ========================================================================== */
 
+#landing {
+    display:table;
+    width:100%;
+}
    #lcontainer {
-    padding-top:15%;
-    padding-bottom:15%;
-    max-width:1040px;
-    margin-left:auto;
-    margin-right:auto;
+    width:100%;
     text-align: center;
+    display:table-cell;
+    vertical-align: middle;
    }
 
    #landing p {
