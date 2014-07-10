@@ -18,26 +18,30 @@
     <body>
 
 <header>
-    <div id="logo">
-        J<span class="hide">esse</span>
-        L<span class="hide">ivingston</span>
-    </div>
+    <div id="hwrap">
+        <div id="logo">
+            J<span class="hide">esse</span>
+            L<span class="hide">ivingston</span>
+        </div>
 
-    <ul id="nav">
-        <li>What I Do</li>
-        <li>My Process</li>
-        <li>My Pricing</li>
-        <li>My Work</li>
-        <li>Request a Commission</li>
-    </ul>
+        <nav>
+            <a>What I Do</a>
+            <a>My Process</a>
+            <a>My Pricing</a>
+            <a>My Work</a>
+            <a>Request a Commission</a>
+        </nav>
+    </div>
 </header>
 
 <!--landing section-->
 
 <section id="landing">
-    <p>Web Developer | Designer | Classical Musician<p>
-        <h1>Jesse Livingston</h1>
-            <h2>Coding digital symphonies for clients of all types</h2>
+    <div id="lcontainer">
+        <p>Web Developer | Designer | Classical Musician<p>
+            <h1>Jesse Livingston</h1>
+                <h2>Coding digital symphonies for clients of all types</h2>
+    </div>
 
 </section>
 
@@ -49,23 +53,23 @@
 
 
     <h2>My Skills</h2>
-        <h3>Branding</h3>
-            <img class="icon" src="css/img/brand.png"/>
+        <img class="icon" src="css/img/brand.png"/>
+            <h3>Branding</h3>
                 <p>Whether you are in individual, business, or non-profit, you have an identity and a message for the world. Helping you discover this is one my favorite parts of my job.</p>
-        <h3>CMS</h3>
-            <img class="icon" src="css/img/cms.png"/>
+        <img class="icon" src="css/img/cms.png"/>
+            <h3>CMS</h3>
                 <p>You won’t get nickled and dimed when you need to update content. You’ll be equipped with a Content Management System to update all that yourself.</p>
-        <h3>Design</h3>
-            <img class="icon" src="css/img/design.png"/>
+        <img class="icon" src="css/img/design.png"/>
+            <h3>Design</h3>
                 <p>I craft clean, vibrant, responsive designs that are visually appealing, interactive, with practical functions.</p>
-        <h3>Analytics</h3>
-            <img class="icon" src="css/img/analytics.png"/>
+        <img class="icon" src="css/img/analytics.png"/>
+            <h3>Analytics</h3>
                 <p>Your site will be equipped with valuable analytics about your web traffic and how users interact with your site.</p>
-        <h3>Tech Talk</h3>
-            <img class="icon" src="css/img/tech.png"/>
+        <img class="icon" src="css/img/tech.png"/>
+            <h3>Tech Talk</h3>
                 <p>I am proficient in HTML5 and CSS3 and familiar with Javascript, JQuery, SCSS, Wordpress and Ruby on Rails.<p>
-        <h3>Classical Music</h3>
-            <img class="icon" src="css/img/music.png"/>
+        <img class="icon" src="css/img/music.png"/>
+            <h3>Classical Music</h3>
                 <p>My extensive background in classical music gives me a unique edge as a web developer. I see each project as a kind of digital composition.</p>
 </section>
 
@@ -103,11 +107,11 @@
                 <p>"How much do you charge?" is by far the most common first question I am asked. This is an understandable first question, but doesn't tackle the most important questions to ask of your web developer. Let's put things into focus.
     <div>
         <h2>A Tale of Two Pricing Systems</h2>
-            <h3>Fixed Bid</h3>
-                <img class="icon" src="css/img/fixed.png"/>
+            <img class="icon" src="css/img/fixed.png"/>
+                <h3>Fixed Bid</h3>
                     <p>Everyone wants to know how much a website will cost. But a fixed bid estimate does a poor job of representing the natural variation of a task and the time required for it.</p>
-            <h3>Time and Materials</h3>
-                <img class="icon" src="css/img/time.png"/>
+            <img class="icon" src="css/img/time.png"/>
+                <h3>Time and Materials</h3>
                     <p>Instead, I generally do a time & materials estimate - a fixed hourly rate applied to a good faith estimate of the range of time required to complete each component of the website. That way, the overall cost of the project is ultimately within your control. First estimate too expensive? No problem. We can trim the scope of the project to fit within your budget.<p>
         <h2>
     </div> 
@@ -115,7 +119,12 @@
     <div>
     <h2>The Important Stuff</h2>
         <p>With that in mind, let's look at the real considerations when choosing a web designer.</p>
-            <img src="css/img/pie.png"/>            
+            
+            <div>
+                <img src="css/img/pie.png"/>
+            </div>
+
+            <div>            
                 <h3>Trust</h3>
                     <p>You should never hire someone you don’t trust. I will always be transparent about hours and cost of your project. I’m incurably honest.</p>
                 <h3>Partnership</h3>
@@ -124,6 +133,7 @@
                     <p>I have the resources and abilities to deliver the high quality work.</p>
                 <h3>Connections</h3>
                     <p>I may work freelance, but I’m no lone ranger. I collaborate closely with a team of developers all over the country.</p>
+            </div>
     </div>
 
 
@@ -157,13 +167,7 @@
 <!--footer-->
 
 <footer>
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-
+    <div class="socialmedia" id="fb"></div><div class="socialmedia" id="gplus"></div><div class="socialmedia" id="lin"></div><div class="socialmedia" id="twitter"></div>
 </footer>
 
 
