@@ -109,13 +109,18 @@ html {
    Typography
    ========================================================================== */
 
-p, ul {
+p, ul, header nav a {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
 }
 
 h1, h2, h3, #logo {
     font-family:'Gentium Basic', sans-serif;
     font-weight: 700;
+}
+
+h1, h2, h3 {
+    text-align: center;
 }
 
 h1 {
@@ -130,8 +135,17 @@ h3, #logo {
     font-size:2em;
 }
 
+header nav span {
+    font-family: 'Gentium Basic', sans-serif;
+    font-size: 1.2em;
+}
+
+#skills h1 p {
+
+}
+
 /* ==========================================================================
-   header
+   Structure/Scaffolding
    ========================================================================== */
 header {
     width:100%;
@@ -140,6 +154,35 @@ header {
     background:white;
     opacity:.90;
 }
+
+#intro {
+    text-align: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.largebox {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.skillbox {
+    max-width: 360px;
+    min-height: 405px;
+    text-align: left;
+    display: inline-block;
+    margin: 15px;
+}
+
+.skillbox img {
+    text-align: center;
+}
+/* ==========================================================================
+   header
+   ========================================================================== */
+
 
 header nav {
     float:right;
@@ -151,11 +194,11 @@ header nav {
 }
 
 header nav a {
-    font-size: 13px;
+    font-size: 1em;
     margin-left: 25px;
     transition: all 0.2s ease 0s;
     padding: 7px 15px;
-    font-weight: 600;
+    font-weight: 400;
     display: block;
     float: left;
 }
@@ -179,25 +222,31 @@ header nav a:hover {
     display:table;
     width:100%;
 }
-   #lcontainer {
+#lcontainer {
     width:100%;
     text-align: center;
     display:table-cell;
     vertical-align: middle;
-   }
+}
 
-   #landing p {
+#landing p {
     color:#22A301;
-   }
+}
 
-   #landing h2 {
+#landing h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-   }
+}
 
-   #landing h1 {
+#landing h1 {
     margin-top:5px;
-   }
+}
+
+/* ==========================================================================
+   skills
+   ========================================================================== */
+
+
 
 /* ==========================================================================
    images

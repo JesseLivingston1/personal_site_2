@@ -8,5 +8,5 @@ $(document).ready(function() {
 
     $(window).resize(function() {
     	var heightwindow = $(window).height();
-        $('section, #layer1, .workFull').css('height', heightwindow+'px');
+        $('#landing').css('height', heightwindow+'px');
     });
