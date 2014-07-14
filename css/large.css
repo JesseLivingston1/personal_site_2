@@ -140,27 +140,74 @@ header nav span {
     font-size: 1.2em;
 }
 
-#skills h1 p {
+#skills .section_head p {
+    font-size: 2em;
+}
 
+/* ==========================================================================
+   images
+   ========================================================================== */
+
+.icon {
+    max-width:150px;
+    max-height:140px;
+}
+
+#process #graph{
+    width:100%;
 }
 
 /* ==========================================================================
    Structure/Scaffolding
    ========================================================================== */
+.half {
+    width:48%;
+    display:inline-block;
+    float:left;
+    margin:1%;
+}
+
 header {
     width:100%;
     height:100px;
     position:fixed;
     background:white;
-    opacity:.90;
 }
 
-#intro {
+#landing {
+    display:table;
+    width:100%;
+}
+
+#lcontainer {
+    width:100%;
     text-align: center;
-    max-width: 1200px;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.section_head, .section_body, .section_mid{
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
+
+.section_head {
+    max-width: 1200px;
+    margin-bottom: 8%;
+    margin-top:8%;
+}
+
+.section_body {
+    max-width: 1400px;
+}
+
+.section_mid{
+    margin-top:8%;
+    max-width: 1200px;
+
+}
+
 
 .largebox {
     margin-left: auto;
@@ -171,14 +218,24 @@ header {
 .skillbox {
     max-width: 360px;
     min-height: 405px;
-    text-align: left;
+    text-align: center;
     display: inline-block;
     margin: 15px;
+    vertical-align: top;
 }
 
-.skillbox img {
+#description {
+    width:100%;
+}
+
+.step {
+    width:17.8%;
+    margin:1%;
+    display:inline-block;
+    vertical-align: top;
     text-align: center;
 }
+
 /* ==========================================================================
    header
    ========================================================================== */
@@ -218,17 +275,6 @@ header nav a:hover {
    landing
    ========================================================================== */
 
-#landing {
-    display:table;
-    width:100%;
-}
-#lcontainer {
-    width:100%;
-    text-align: center;
-    display:table-cell;
-    vertical-align: middle;
-}
-
 #landing p {
     color:#22A301;
 }
@@ -248,13 +294,7 @@ header nav a:hover {
 
 
 
-/* ==========================================================================
-   images
-   ========================================================================== */
 
-.icon {
-    max-width:150px;
-}
 
 /* ==========================================================================
    footer
