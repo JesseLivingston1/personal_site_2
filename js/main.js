@@ -3,10 +3,10 @@
 
 $(document).ready(function() {
         var heightwindow = $(window).height();
-        $('#landing').css('height', heightwindow +'px');
+        $('#landing, #contact').css('height', heightwindow +'px');
     });
 
     $(window).resize(function() {
     	var heightwindow = $(window).height();
-        $('#landing').css('height', heightwindow+'px');
+        $('#landing, #contact').css('height', heightwindow+'px');
     });

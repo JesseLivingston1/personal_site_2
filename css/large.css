@@ -111,7 +111,7 @@ html {
 
 p, ul, header nav a {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 h1, h2, h3, #logo {
@@ -128,11 +128,11 @@ h1 {
 }
 
 h2 {
-    font-size:3em;
+    font-size:2.5em;
 }
 
 h3, #logo {
-    font-size:2em;
+    font-size:1.5em;
 }
 
 header nav span {
@@ -141,7 +141,12 @@ header nav span {
 }
 
 #skills .section_head p {
-    font-size: 2em;
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+.section_body .half, .section_body h3 {
+    text-align: left;
 }
 
 /* ==========================================================================
@@ -157,6 +162,36 @@ header nav span {
     width:100%;
 }
 
+.step h3:after {
+    content: "";
+    width: 35px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.step.one h3:after{
+    background: none repeat scroll 0% 0% #43AAA3;
+}
+
+.workSample.one {
+    background: #954A13 url('img/bassclef.png')center no-repeat;
+}
+
+.workSample.two {
+    background: #49a73c;
+}
+
+.workSample.three {
+    background: #f89c20 url('img/converge.png')center no-repeat;
+}
+
+.section_body .half.img {
+    text-align: center;
+}
+
 /* ==========================================================================
    Structure/Scaffolding
    ========================================================================== */
@@ -168,7 +203,7 @@ header nav span {
 }
 
 .half:first-child {
-    line-height: 700px;
+    line-height: 500px;
 }
 
 header {
@@ -176,6 +211,7 @@ header {
     height:120px;
     position:fixed;
     background:white;
+    z-index: 1;
 }
 
 #landing {
@@ -220,7 +256,7 @@ header {
 }
 
 .skillbox {
-    max-width: 360px;
+    width: 30%;
     min-height: 405px;
     text-align: center;
     display: inline-block;
@@ -229,15 +265,40 @@ header {
 }
 
 #description {
-    width:100%;
+    max-width: 1300px;
+    margin: 20px auto;
 }
 
 .step {
-    width:17.8%;
-    margin:1%;
-    display:inline-block;
+    width: 15%;
+    margin: 0px 2%;
+    display: inline-block;
+    text-align: left;
     vertical-align: top;
-    text-align: center;
+}
+
+.step h3 {
+    text-align: left;
+}
+
+.box{
+    position: relative;
+    width: 30%;
+    display:inline-block;     
+}
+
+.box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;  /* initial ratio of 1:1*/
+}
+
+.workSample{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 /* ==========================================================================
