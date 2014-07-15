@@ -17,9 +17,9 @@
 <!-- css files -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" media='screen and (min-width: 240px) and (max-width: 480px)' href="small.css"/>
-  <link rel="stylesheet" media='screen and (min-width: 480px) and (max-width: 100px)' href="medium.css"/>
-  <link rel="stylesheet" media='screen and (min-width: 1000px) and (max-width: 1600px)' href="large.css"/>
+  <link rel="stylesheet" media='screen and (min-width: 240px) and (max-width: 480px)' href="css/small.css"/>
+  <link rel="stylesheet" media='screen and (min-width: 480px) and (max-width: 100px)' href="css/medium.css"/>
+  <link rel="stylesheet" media='screen and (min-width: 1000px)' href="css/large.css"/>
 
 <!-- js and fonts -->
 
@@ -37,12 +37,30 @@
         </div>
 
         <nav>
-            <a><span>Overture</span><a>
-            <a><span>Act 1:</span> Me</a>
-            <a><span>Act 2:</span> My Process</a>
-            <a><span>Act 3:</span> My Pricing</a>
-            <a><span>Act 4:</span> My Work</a>
-            <a>Request a Commission</a>
+            <div class = "navitem">Overture</div>
+
+            <div class = "navitem">
+                <span>Act 1</span> 
+                    <div>Me</div>
+            </div>
+
+            <div class = "navitem">
+                <span>Act 2</span> 
+                    <div>My Process</div>
+            </div>
+            <div class = "navitem">
+                <span>Act 3</span> 
+                    <div>My Pricing</div>
+            </div>
+
+            <div class = "navitem">
+                <span>Act 4</span> 
+                    <div>My Work</div>
+            </div>
+
+            <div class = "navitem">Request a Commission</div>
+
+
         </nav>
     </div>
 </header>

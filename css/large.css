@@ -141,11 +141,6 @@ h3, #logo {
     font-size:1.5em;
 }
 
-header nav span {
-    font-family: 'Gentium Basic', sans-serif;
-    font-size: 1.2em;
-}
-
 .midhead {
     font-size: 1.8em;
     font-weight: 300;
@@ -349,7 +344,7 @@ header nav {
     top:3px;
 }
 
-header nav a {
+.navitem {
     font-size: 1em;
     margin-left: 25px;
     transition: all 0.2s ease 0s;
@@ -359,7 +354,7 @@ header nav a {
     float: left;
 }
 
-header nav a:hover {
+.navitem:hover {
     color:#22A301;
     cursor:pointer;
 }
