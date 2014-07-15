@@ -212,7 +212,7 @@ header nav span {
 }
 
 .workSample.two {
-    background: #49a73c;
+    background: #49a73c url('img/wine-glass.png')center no-repeat;;
 }
 
 .workSample.three {
@@ -249,12 +249,12 @@ header {
     z-index: 1;
 }
 
-#landing {
+#landing, #contact {
     display:table;
     width:100%;
 }
 
-#lcontainer {
+.container {
     width:100%;
     text-align: center;
     display:table-cell;
@@ -403,7 +403,8 @@ footer {
     height:100%;
     padding:0;
     margin:0;
-    display:inline-block;
+    display: block;
+    float: left;
 }
 
 #fb {
