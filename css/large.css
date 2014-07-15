@@ -171,7 +171,7 @@ header nav span {
 
 .step h3:after, .quality h3:after  {
     content: "";
-    width: 70px;
+    width: 60px;
     height: 3px;
     display: block;
     bottom: 0px;
@@ -206,8 +206,6 @@ header nav span {
 .quality.four h3:after{
     background: none repeat scroll 0% 0% #2c97de;
 }
-
-
 
 .workSample.one {
     background: #954A13 url('img/bassclef.png')center no-repeat;
@@ -271,7 +269,8 @@ header {
 
 .section_head {
     max-width: 1200px;
-    margin-bottom: 15%;
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
 
 .section_body {
