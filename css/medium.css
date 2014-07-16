@@ -379,6 +379,7 @@ header {
 
 .half.img img {
     width:70%;
+    max-width:400px;
 }
 /* ==========================================================================
    Structure/Scaffolding
