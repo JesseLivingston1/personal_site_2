@@ -164,25 +164,34 @@ h3, #logo {
     width:100%;
 }
 
-.step h3:after, .quality h3:after  {
+.step h3:after, .quality h3:after, .navitem span:after  {
     content: "";
-    width: 60px;
     height: 3px;
     display: block;
     bottom: 0px;
     left: 0px;
 }
+.quality h3:after {
+    width: 120px;
+}
+.navitem span:after  {
+    width:90px;
+}
 
-.step.one h3:after{
+.navitem.one, .navitem.six {
+    margin-top:12px;
+}
+
+.step.one h3:after, .navitem.two span:after{
     background: none repeat scroll 0% 0% #43AAA3;
 }
-.step.two h3:after{
+.step.two h3:after, .navitem.three span:after{
     background: none repeat scroll 0% 0% #F16162;
 }
-.step.three h3:after{
+.step.three h3:after, .navitem.four span:after{
     background: none repeat scroll 0% 0% #FAAF4A;
 }
-.step.four h3:after{
+.step.four h3:after, .navitem.five span:after{
     background: none repeat scroll 0% 0% #49B8E7;
 }
 .step.five h3:after{
@@ -238,7 +247,7 @@ section {
 
 header {
     width:100%;
-    height:120px;
+    height:140px;
     position:fixed;
     background:white;
     z-index: 1;
@@ -352,6 +361,11 @@ header nav {
     font-weight: 400;
     display: block;
     float: left;
+    text-align: center;
+}
+
+.navitem span:after{
+
 }
 
 .navitem:hover {
