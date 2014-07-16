@@ -172,10 +172,10 @@ h3, #logo {
 .side-nav {
     position: fixed;
     top: 0;
-    right: -50%;
+    right: -45%;
     padding-top: 1.2em;
     height: 100%;
-    width: 50%;
+    width: 45%;
     overflow-y: hidden;
     -webkit-transition: all 0.7s;
     -moz-transition: all 0.7s;
