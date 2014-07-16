@@ -111,7 +111,11 @@ html {
 
 p, ul, header nav a {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: .8em;
+}
+
+p {
+    line-height: 20px;
 }
 
 h1, h2, h3, #logo {
@@ -121,14 +125,16 @@ h1, h2, h3, #logo {
 
 h1, h2, h3 {
     text-align: center;
+    margin:10px;
+    padding:0;
 }
 
 h1 {
-    font-size:4em;
+    font-size:3em;
 }
 
 h2 {
-    font-size:2.5em;
+    font-size:2em;
 }
 
 .bookend {
@@ -142,16 +148,23 @@ h3, #logo {
 }
 
 .midhead {
-    font-size: 1.8em;
+    font-size: 1.3em;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.4em;
 }
 
 .section_body .half, .section_body h3 {
     text-align: left;
 }
 
+.section_body .half {
+    width:100%;
+}
 
+.section_body img {
+    width:60%;
+}
 
 /* ==========================================================================
    side nav
@@ -159,16 +172,16 @@ h3, #logo {
 .side-nav {
     position: fixed;
     top: 0;
-    right: -20%;
-    padding-top: 1em;
+    right: -50%;
+    padding-top: 1.2em;
     height: 100%;
-    width: 20%;
+    width: 50%;
     overflow-y: hidden;
     -webkit-transition: all 0.7s;
     -moz-transition: all 0.7s;
     transition: all 0.7s;
     display: block;
-    margin-top:140px;
+    margin-top:75px;
     z-index:5;
     background-color: #22A301;
  
@@ -184,7 +197,7 @@ h3, #logo {
 }
 
 .secondary-header {
-    height:100px;
+    height:50px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
@@ -199,11 +212,11 @@ h3, #logo {
 }
 
 .shift {
-    -webkit-transform: translateX(-20%);
-    -moz-transform: translateX(-20%);
-    -ms-transform: translateX(-20%);
-    -o-transform: translateX(-20%);
-    transform: translateX(-20%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .side {
@@ -305,23 +318,33 @@ header {
    ========================================================================== */
 
 .icon {
-    max-width:150px;
-    max-height:140px;
+    width:120px;
+    height:120px;
 }
 
 #process #graph{
     width:100%;
+    height: 100px;
 }
 
 .step h3:after, .quality h3:after, .navitem span:after  {
     content: "";
     height: 3px;
+    width:60px;
     display: block;
     bottom: 0px;
     left: 0px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .quality h3:after {
     width: 120px;
+}
+
+.quality p, .quality h3 {
+    text-align: center
 }
 .navitem span:after  {
     width:90px;
@@ -378,7 +401,7 @@ header {
 
 
 .half.img img {
-    width:70%;
+    width:60%;
 }
 /* ==========================================================================
    Structure/Scaffolding
@@ -394,13 +417,10 @@ section {
     vertical-align: top;
 }
 
-.half:first-child {
-    line-height: 500px;
-}
 
 header {
     width:100%;
-    height:140px;
+    height:75px;
     position:fixed;
     background:white;
     z-index: 1;
@@ -436,46 +456,46 @@ header {
 
 .section_mid{
     margin-top:8%;
-    max-width: 1200px;
-
+    width:100%;
 }
 
 
 .largebox {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1200px;
+    width:100%;
 }
 
-.skillbox {
-    width: 46%;
+.skillbox, .step {
     text-align: center;
     display: inline-block;
-    margin: 15px;
+    margin: 3%;
     vertical-align: top;
 }
 
-#description {
-    max-width: 1300px;
-    margin: 20px auto;
+.skillbox{
+    width:43%;
 }
 
 .step {
-    width: 15%;
-    margin: 0px 2%;
-    display: inline-block;
-    text-align: left;
-    vertical-align: top;
+    width: 100%;
+}
+
+#description {
+    margin: 20px auto;
+    width:100%;
 }
 
 .step h3 {
-    text-align: left;
+    text-align: center;
 }
 
 .box{
     position: relative;
-    width: 30%;
-    display:inline-block;     
+    width: 60%;
+    display:block;  
+    margin-left: auto;
+    margin-right: auto;   
 }
 
 .box:before{
@@ -529,7 +549,7 @@ header nav {
 
 #hwrap {
     position: relative;
-    margin: 45px 65px 0px;
+    margin: 20px 20px 0px;
     padding-bottom: 15px;
 }
 
@@ -562,7 +582,7 @@ footer {
 }
 
 .socialmedia {
-    width:25%;
+    width:50%;
     height:100%;
     padding:0;
     margin:0;
