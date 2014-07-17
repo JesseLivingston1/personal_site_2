@@ -285,7 +285,6 @@ h3, #logo {
     position: fixed;
     top: 0;
     right: -20%;
-    padding-top: 1em;
     height: 100%;
     width: 20%;
     overflow-y: hidden;
@@ -293,7 +292,7 @@ h3, #logo {
     -moz-transition: all 0.7s;
     transition: all 0.7s;
     display: block;
-    margin-top:140px;
+    margin-top: 100px;
     z-index:5;
     background-color: #22A301;
  
@@ -305,6 +304,7 @@ h3, #logo {
     text-align: left;
     color:white;
     font-family: 'Open Sans', sans-serif;
+    width:100%;
 
 }
 
@@ -340,18 +340,6 @@ h3, #logo {
     transition-property: transform,opacity;
 }
 
-.show{
-    display:block;
-}
-
-.side-nav {
-    height:100%;
-}
-
-.side-nav .navitem {
-    width:100%;
-}
-  
 .main .navitem{
 display:none;
 }
@@ -747,7 +735,7 @@ header nav {
 
 #hwrap {
     position: relative;
-    margin: 45px 65px 0px;
+    margin: 30px 65px 0px;
     padding-bottom: 15px;
     height: 75px;
 }

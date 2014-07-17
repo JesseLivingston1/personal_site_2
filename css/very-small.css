@@ -322,7 +322,7 @@ h3, #logo {
 }
 
 .secondary-header {
-    height:50px;
+    height:75px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
