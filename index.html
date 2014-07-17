@@ -44,73 +44,104 @@
 
 <!--header-->
 
-<header class ="secondary-header">
+<header data-scroll-header class ="secondary-header">
     <div id="hwrap">
         <div id="logo">
             <div class="door bottom"></div>
                 <div class="j">J</div>
-                    <span>esse</span>
+                    <span class="first">
+                        <a>e</a>
+                        <a>s</a>
+                        <a>s</a>
+                        <a>e</a>
+                    </span>
             <div class="door top"></div>
                 <div class="l">L</div>
-                    <span>ivingston</span>
+                    <span class="last">
+                        <a>i</a>
+                        <a>v</a>
+                        <a>i</a>
+                        <a>n</a>
+                        <a>g</a>
+                        <a>s</a>
+                        <a>t</a>
+                        <a>o</a>
+                        <a>n</a>
+                    </span>
         </div>
 
         <nav class="side-nav">
 
-            <div class = "navitem two">
+            <a data-scroll href="#skills" class = "navitem two">
                 <div>Act 1: Me</div>
-            </div>
+            </a>
 
-            <div class = "navitem three">
+            <a data-scroll href="#process" class = "navitem three">
                 <div>Act 2: My Process</div>
-            </div>
-            <div class = "navitem four">
+            </a>
+
+            <a data-scroll href="#pricing" class = "navitem four">
                 <div>Act 3: My Pricing</div>
-            </div>
+            </a>
 
-            <div class = "navitem five">
+            <a data-scroll href="#work" class = "navitem five">
                 <div>Act 4: My Work</div>
-            </div>
+            </a>
 
-            <div class = "navitem six">Commissions</div>
+            <a data-scroll href="#end" class = "navitem six">Contact</a>
 
         </nav>
     </div>
 </header>
 
-<header class ="main-header">
+<header data-scroll-header class ="main-header">
     <div id="hwrap">
         <div id="logo">
             <div class="door bottom"></div>
                 <div class="j">J</div>
-                    <span class="first">esse</span>
+                    <span class="first">
+                        <a>e</a>
+                        <a>s</a>
+                        <a>s</a>
+                        <a>e</a>
+                    </span>
             <div class="door top"></div>
                 <div class="l">L</div>
-                    <span class="last">ivingston</span>
+                    <span class="last">
+                        <a>i</a>
+                        <a>v</a>
+                        <a>i</a>
+                        <a>n</a>
+                        <a>g</a>
+                        <a>s</a>
+                        <a>t</a>
+                        <a>o</a>
+                        <a>n</a>
+                    </span>
         </div>
 
         <nav class="main">
             <div class="hamburger"></div>
-                <div class = "navitem two">
+                <a data-scroll href="#skills" class = "navitem two">
                     <span>Act 1</span> 
                         <div>Me</div>
-                </div>
+                </a>
 
-                <div class = "navitem three">
+                <a data-scroll href="#process" class = "navitem three">
                     <span>Act 2</span> 
                         <div>My Process</div>
-                </div>
-                <div class = "navitem four">
+                </a>
+                <a data-scroll href="#pricing" class = "navitem four">
                     <span>Act 3</span> 
                         <div>My Pricing</div>
-                </div>
+                </a>
 
-                <div class = "navitem five">
+                <a data-scroll href="#work" class = "navitem five">
                     <span>Act 4</span> 
                         <div>My Work</div>
-                </div>
+                </a>
 
-                <div class = "navitem six">Contact</div>
+                <a data-scroll href="#end" class = "navitem six">Contact</a>
 
             
         </nav>
@@ -292,9 +323,11 @@
 
 <section id="contact">
     <div class="container">
-        <h1>Contact</h1>
+        <h1 id="end">Contact</h1>
             <h2 class="midhead">Like what you saw? We should talk.</h2>
-                <img src="css/img/gmail.png"/>
+                <a href="mailto:jesselivingston1@gmail.com">
+                    <img src="css/img/gmail.png"/>
+                </a>
     </div>
 
 </section>
@@ -309,6 +342,17 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script>
+            smoothScroll.init({
+                speed: 500, // Integer. How fast to complete the scroll in milliseconds
+                easing: 'easeOutCubic', // Easing pattern to use
+                updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+                offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+                callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
+                callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
+            });
+        </script>
         <script src="js/main.js"></script>
         <script src="js/nav.js"></script>
 
