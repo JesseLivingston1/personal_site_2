@@ -477,9 +477,9 @@ header {
     left: 30px;
 }
 
-#logo:hover a{
+/*#logo:hover a{
     opacity:1;
-}
+}*/
 
 #logo:hover .top {
 
@@ -503,9 +503,9 @@ header {
 
 
 #logo {
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
     width:34px;
     height:34px;
     padding:10px;
