@@ -235,7 +235,7 @@ p, ul, header nav a {
 }
 
 h1, h2, h3, #logo {
-    font-family:'Gentium Basic', sans-serif;
+    font-family:'Merriweather', serif;
     font-weight: 700;
 }
 
@@ -253,7 +253,7 @@ h1 {
 
 
 h2 {
-    font-size:2.5em;
+    font-size:1.8em;
 }
 
 .bookend {
@@ -263,7 +263,7 @@ h2 {
 }
 
 h3, #logo {
-    font-size:1.5em;
+    font-size:1em;
 }
 
 .midhead {
@@ -651,7 +651,7 @@ header nav {
     width: 2px;
     position: absolute;
     height: 20px;
-    left: 35px;
+    left: 38px;
 }
 
 .j {
@@ -671,7 +671,7 @@ header nav {
     border-top: 2px solid #333;
     border-left: 2px solid #333;
     border-bottom: 2px solid #333;
-    width: 34px;
+    width: 38px;
     cursor: pointer;
     transition: all 0.4s ease-out 0s;
     height: 34px;
