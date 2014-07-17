@@ -236,7 +236,7 @@ p, ul, header nav a {
 }
 
 h1, h2, h3, #logo {
-    font-family:'Gentium Basic', sans-serif;
+    font-family:'Merriweather', serif;
     font-weight: 700;
 }
 
@@ -249,7 +249,7 @@ h1 {
 }
 
 h2 {
-    font-size:2.5em;
+    font-size:2.2em;
 }
 
 .bookend {
@@ -259,7 +259,7 @@ h2 {
 }
 
 h3, #logo {
-    font-size:1.5em;
+    font-size:1.3em;
 }
 
 .midhead {
