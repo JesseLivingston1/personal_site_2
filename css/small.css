@@ -21,6 +21,7 @@ textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
+    overflow-x:hidden;
 }
 
 /*
@@ -434,11 +435,15 @@ header {
 .icon {
     max-width:150px;
     max-height:140px;
+    opacity:.85;
 }
 
 #process #graph{
     width:100%;
-    height: 200px;
+}
+
+.dna{
+    display:none;
 }
 
 .step h3:after, .quality h3:after, .navitem span:after  {
@@ -469,19 +474,19 @@ header {
 }
 
 .step.one h3:after, .navitem.two span:after{
-    background: none repeat scroll 0% 0% #43AAA3;
+    background: none repeat scroll 0% 0% #808588;
 }
 .step.two h3:after, .navitem.three span:after{
     background: none repeat scroll 0% 0% #F16162;
 }
 .step.three h3:after, .navitem.four span:after{
-    background: none repeat scroll 0% 0% #FAAF4A;
-}
-.step.four h3:after, .navitem.five span:after{
     background: none repeat scroll 0% 0% #49B8E7;
 }
+.step.four h3:after, .navitem.five span:after{
+    background: none repeat scroll 0% 0% #FAAF4A;
+}
 .step.five h3:after{
-    background: none repeat scroll 0% 0% #808588;
+    background: none repeat scroll 0% 0% #43AAA3;
 }
 
 .quality.one h3:after{
@@ -518,6 +523,97 @@ header {
     width:60%;
     max-width:300px;
 }
+
+/* ==========================================================================
+   work images
+   ========================================================================== */
+
+#work .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+#work .outer {
+    display:table;
+    height:100%;
+}
+
+#work .inner {
+    display: table-cell;
+    vertical-align: middle;
+    color:white;
+}
+
+#work .box:hover .content{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+#work .box:hover .workSample.one {
+    background-image:none;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+#work .box:hover .workSample.two {
+    background-image:none;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+#work .box:hover .workSample.three {
+    background-image:none;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background: none repeat scroll 0px 0px transparent;
+    padding: 10px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease 0s;;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    color: #333;
+    background: none repeat scroll 0% 0% #FFF;
+}
+
+
 /* ==========================================================================
    Structure/Scaffolding
    ========================================================================== */
@@ -616,7 +712,8 @@ header {
     width: 60%;
     display:block;  
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto;
+    opacity: 0.9;   
 }
 
 .box:before{
@@ -787,10 +884,6 @@ header nav {
 /* ==========================================================================
    footer
    ========================================================================== */
-footer {
-    height:100px;
-}
-
 .socialmedia {
     width:50%;
     height:100%;
@@ -798,28 +891,69 @@ footer {
     margin:0;
     display: block;
     float: left;
+    transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    opacity:.85;
 }
 
-#fb {
-    background:url('img/fb.png')center no-repeat;
+.socialmedia:hover{
+    opacity:1;
+}
+
+.socialicon {
+    width: 50px;
+    height: 80px;
+    margin: 30px auto;
+    transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+}
+
+.socialmedia:hover .socialicon{
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.socialmedia.fb {
     background-color:#3B5998;
 }
 
-#lin {
-    background:url('img/lin.png')center no-repeat;
-    background-color:#8195b6;
+.socialicon.fb {
+    background:url('img/fb.png')center no-repeat;
 }
 
-#twitter {
-    background:url('img/twitter.png')center no-repeat;
+.socialmedia.lin {
+    background-color:#8195B6;
+}
+
+.socialicon.lin{
+    background:url('img/lin.png')center no-repeat;
+}
+
+.socialmedia.twitter {
     background-color:#85b7bd;
 }
 
-#gplus {
-    background:url('img/gplus.png')center no-repeat;
+.socialicon.twitter{
+    background:url('img/twitter.png')center no-repeat;
+}
+
+.socialmedia.gplus {
     background-color:#ed4335;
 }
 
+.socialicon.gplus{
+    background:url('img/gplus.png')center no-repeat;
+}
 
 /* ==========================================================================
    Helper classes

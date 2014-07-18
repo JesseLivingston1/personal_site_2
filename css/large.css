@@ -279,6 +279,7 @@ h3, #logo {
 .icon {
     max-width:150px;
     max-height:140px;
+    opacity:.85;
 }
 
 #process #graph{
@@ -304,19 +305,19 @@ h3, #logo {
 }
 
 .step.one h3:after, .navitem.two span:after{
-    background: none repeat scroll 0% 0% #43AAA3;
+    background: none repeat scroll 0% 0% #808588;
 }
 .step.two h3:after, .navitem.three span:after{
     background: none repeat scroll 0% 0% #F16162;
 }
 .step.three h3:after, .navitem.four span:after{
-    background: none repeat scroll 0% 0% #FAAF4A;
-}
-.step.four h3:after, .navitem.five span:after{
     background: none repeat scroll 0% 0% #49B8E7;
 }
+.step.four h3:after, .navitem.five span:after{
+    background: none repeat scroll 0% 0% #FAAF4A;
+}
 .step.five h3:after{
-    background: none repeat scroll 0% 0% #808588;
+    background: none repeat scroll 0% 0% #43AAA3;
 }
 
 .quality.one h3:after{
@@ -416,11 +417,40 @@ h3, #logo {
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
 }
+
+button {
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background: none repeat scroll 0px 0px transparent;
+    padding: 10px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease 0s;;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    color: #333;
+    background: none repeat scroll 0% 0% #FFF;
+}
+
 /* ==========================================================================
    Structure/Scaffolding
    ========================================================================== */
 section {
     position:relative;
+}
+
+.side-nav {
+    display:none;
 }
 
 .half {
@@ -512,6 +542,7 @@ header {
     position: relative;
     width: 30%;
     display:inline-block;    
+    opacity: 0.9;
 }
 
 .box:before{
@@ -673,10 +704,6 @@ header nav {
 /* ==========================================================================
    footer
    ========================================================================== */
-footer {
-    height:100px;
-}
-
 .socialmedia {
     width:25%;
     height:100%;
@@ -684,26 +711,68 @@ footer {
     margin:0;
     display: block;
     float: left;
+    transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    opacity:.85;
 }
 
-#fb {
-    background:url('img/fb.png')center no-repeat;
+.socialmedia:hover{
+    opacity:1;
+}
+
+.socialicon {
+    width: 50px;
+    height: 80px;
+    margin: 30px auto;
+    transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+}
+
+.socialmedia:hover .socialicon{
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.socialmedia.fb {
     background-color:#3B5998;
 }
 
-#lin {
-    background:url('img/lin.png')center no-repeat;
-    background-color:#8195b6;
+.socialicon.fb {
+    background:url('img/fb.png')center no-repeat;
 }
 
-#twitter {
-    background:url('img/twitter.png')center no-repeat;
+.socialmedia.lin {
+    background-color:#8195B6;
+}
+
+.socialicon.lin{
+    background:url('img/lin.png')center no-repeat;
+}
+
+.socialmedia.twitter {
     background-color:#85b7bd;
 }
 
-#gplus {
-    background:url('img/gplus.png')center no-repeat;
+.socialicon.twitter{
+    background:url('img/twitter.png')center no-repeat;
+}
+
+.socialmedia.gplus {
     background-color:#ed4335;
+}
+
+.socialicon.gplus{
+    background:url('img/gplus.png')center no-repeat;
 }
 
 
