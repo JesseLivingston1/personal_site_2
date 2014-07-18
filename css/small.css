@@ -446,6 +446,17 @@ header {
     display:none;
 }
 
+.icon.phone {
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:50px;
+}
+
+.icon.mail {
+    margin-top: 25px;
+}
+
 .step h3:after, .quality h3:after, .navitem span:after  {
     content: "";
     height: 3px;

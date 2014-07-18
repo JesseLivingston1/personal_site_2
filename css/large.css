@@ -282,6 +282,10 @@ h3, #logo {
     opacity:.85;
 }
 
+.icon.phone {
+    display:none;
+}
+
 #process #graph{
     width:100%;
 }
@@ -297,7 +301,13 @@ h3, #logo {
     width: 120px;
 }
 .navitem span:after  {
-    width:90px;
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
 }
 
 .navitem.one, .navitem.six {
@@ -661,17 +671,20 @@ header nav {
 .navitem {
     font-size: 1em;
     margin-left: 25px;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
     padding: 7px 15px;
     font-weight: 400;
     display: block;
     float: left;
     text-align: center;
+    min-width: 60px;
 }
 
-.navitem:hover {
-    color:#22A301;
-    cursor:pointer;
+.navitem:hover span:after{
+    width:60px;
 }
 
 #hwrap {

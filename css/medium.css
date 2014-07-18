@@ -423,6 +423,10 @@ header {
     opacity:.85;
 }
 
+.icon.phone {
+    display:none;
+}
+
 #process #graph{
     width:100%;
 }
