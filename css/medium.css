@@ -439,6 +439,10 @@ header {
     display:none;
 }
 
+#dna {
+    width:100%;
+}
+
 #process #graph{
     width:100%;
 }

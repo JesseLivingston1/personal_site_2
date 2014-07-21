@@ -282,6 +282,10 @@ h3, #logo {
     opacity:.85;
 }
 
+#dna {
+    width:100%;
+}
+
 .icon.phone {
     display:none;
 }
@@ -310,12 +314,12 @@ h3, #logo {
     transition: all 0.2s ease 0s;
 }
 
-.navitem.one, .navitem.six {
+.navitem.six {
     margin-top:12px;
 }
 
 .step.one h3:after, .navitem.two span:after{
-    background: none repeat scroll 0% 0% #808588;
+    background: #808588;
 }
 .step.two h3:after, .navitem.three span:after{
     background: none repeat scroll 0% 0% #F16162;
@@ -586,6 +590,8 @@ header {
     left: 30px;
 }
 
+
+
 .navitem.six {
     border: 2px solid #333;
     border-radius: 5px;
@@ -611,12 +617,35 @@ header {
 
 .door.bottom {
     bottom:30px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
 }
 
 #logo .door.top {
     top:0;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
 }
 
+#logo:hover .door.bottom {
+    -webkit-transform: rotate(90deg) translate3d(14px, -10px, 0);
+    -moz-transform: rotate(90deg) translate3d(14px, -10px, 0);
+    -ms-transform: rotate(90deg) translate3d(14px, -10px, 0);
+    -o-transform: rotate(90deg) translate3d(14px, -10px, 0);
+    transform: rotate(90deg) translate3d(14px, -10px, 0);
+}
+
+#logo:hover .door.top {
+    -webkit-transform: rotate(-90deg) translate3d(14px, 14px, 0);
+    -moz-transform: rotate(-90deg) translate3d(14px, 14px, 0);
+    -ms-transform: rotate(-90deg) translate3d(14px, 14px, 0);
+    -o-transform: rotate(-90deg) translate3d(14px, 14px, 0);
+    transform: rotate(-90deg) translate3d(14px, 14px, 0);
+}
 
 #logo {
     border-top: 2px solid #333;
