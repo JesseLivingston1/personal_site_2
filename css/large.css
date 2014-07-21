@@ -586,12 +586,19 @@ header {
     left: 30px;
 }
 
-/*#logo:hover a{
-    opacity:1;
-}*/
+.navitem.six {
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
 
-#logo:hover .top {
-
+.navitem.six:hover {
+    border:2px solid #22A301;
+    color:white;
+    background-color:#22A301;
 }
 
 #logo .door {

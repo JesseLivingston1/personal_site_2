@@ -706,7 +706,7 @@ header {
 .skillbox, .step {
     text-align: center;
     display: inline-block;
-    margin: 3%;
+    margin: 1%;
     vertical-align: top;
 }
 
