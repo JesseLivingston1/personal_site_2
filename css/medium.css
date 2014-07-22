@@ -648,32 +648,75 @@ header nav {
 
 .l {
     position: absolute;
-    top: 3px;
-    left: 20px;
+    top: 13px;
+    left: 30px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease 0s;;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
 }
 
-/*#logo:hover a{
-    opacity:1;
-}*/
+.navitem.six {
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease 0s;;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+}
+
+.navitem.six:hover {
+    border:2px solid #22A301;
+    color:white;
+    background-color:#22A301;
+}
 
 #logo .door {
-    background-color: #333;
-    width: 2px;
-    position: absolute;
-    height: 20px;
-    left: 38px;
-}
-
-.j {
-    margin-left:5px;
+    height:30px;
+    background-color: black;
+    width:2px;
+    position:absolute;
+    left: 55px;
 }
 
 .door.bottom {
-    bottom: 52px;
+    bottom:32px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
 }
 
 #logo .door.top {
     top:0;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+#logo:hover .door.bottom {
+    -webkit-transform: rotate(90deg) translate3d(14px, -10px, 0);
+    -moz-transform: rotate(90deg) translate3d(14px, -10px, 0);
+    -ms-transform: rotate(90deg) translate3d(14px, -10px, 0);
+    -o-transform: rotate(90deg) translate3d(14px, -10px, 0);
+    transform: rotate(90deg) translate3d(14px, -10px, 0);
+}
+
+#logo:hover .door.top {
+    -webkit-transform: rotate(-90deg) translate3d(14px, 14px, 0);
+    -moz-transform: rotate(-90deg) translate3d(14px, 14px, 0);
+    -ms-transform: rotate(-90deg) translate3d(14px, 14px, 0);
+    -o-transform: rotate(-90deg) translate3d(14px, 14px, 0);
+    transform: rotate(-90deg) translate3d(14px, 14px, 0);
+}
+
+#logo:hover .l {
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
+    transform: translateX(40px);
 }
 
 
@@ -681,11 +724,11 @@ header nav {
     border-top: 2px solid #333;
     border-left: 2px solid #333;
     border-bottom: 2px solid #333;
-    width: 38px;
-    cursor: pointer;
-    transition: all 0.4s ease-out 0s;
-    height: 34px;
-    font-size: 25px;
+    width:34px;
+    height:34px;
+    padding:10px;
+    cursor:pointer;
+    font-size: 30px;
     -webkit-transition: all .4s ease-out;
     -moz-transition: all .4s ease-out;
     -o-transition: all .4s ease-out;
@@ -694,35 +737,98 @@ header nav {
     filter: alpha(opacity=0);
 }
 
-.last {
-    width:50px;
-}
-
-#logo span a {
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
+#logo div a {
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
     -ms-filter: alpha(opacity=0);
     filter: alpha(opacity=0);
     -webkit-transform: translate3d(-10px,0,0);
     -moz-transform: translate3d(-10px,0,0);
     -ms-transform: translate3d(-10px,0,0);
     transform: translate3d(-10px,0,0);
-    font-size: 20px;
+    font-size: 15px;
     opacity:0;
     display:block;
     float:left;
 }
 
 #logo .first {
-    top:20px;
+    top:18px;
     left:35px;
+    width:300px;
+    height:50px;
+    position:absolute;
 }
 
 #logo .last {
-    top:20px;
-    left:55px;
+    top:18px;
+    left:100px;
+    width:300px;
+    height:50px;
+    position:absolute;
+}
+
+#logo:hover .first a, #logo:hover .last a  {
+    opacity:1;
+}
+
+#logo .one {
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+
+#logo .two {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#logo .three {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#logo .four {
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+}
+
+#logo .five {
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    transition: all .9s ease;
+}
+
+#logo .six {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#logo .seven {
+    -webkit-transition: all 1.1s ease;
+    -moz-transition: all 1.1s ease;
+    -o-transition: all 1.1s ease;
+    transition: all 1.1s ease;
+}
+
+#logo .eight {
+    -webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    transition: all 1.2s ease;
 }
 
 header nav {
