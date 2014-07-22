@@ -649,7 +649,10 @@ header {
     -o-transform: translateX(40px);
     transform: translateX(40px);
 }
-
+#logolink {
+    position:absolute;
+    z-index: 5;
+}
 
 #logo {
     border-top: 2px solid #333;
@@ -658,7 +661,6 @@ header {
     width:34px;
     height:34px;
     padding:10px;
-    cursor:pointer;
     font-size: 30px;
     -webkit-transition: all .4s ease-out;
     -moz-transition: all .4s ease-out;
@@ -688,7 +690,6 @@ header {
 #logo .first {
     top:25px;
     left:35px;
-    width:300px;
     height:50px;
     position:absolute;
 }
@@ -696,7 +697,6 @@ header {
 #logo .last {
     top:25px;
     left:100px;
-    width:300px;
     height:50px;
     position:absolute;
 }
@@ -760,6 +760,13 @@ header {
     -moz-transition: all 1.2s ease;
     -o-transition: all 1.2s ease;
     transition: all 1.2s ease;
+}
+
+#logo .nine {
+    -webkit-transition: all 1.3s ease;
+    -moz-transition: all 1.3s ease;
+    -o-transition: all 1.3s ease;
+    transition: all 1.3s ease;
 }
 
 
