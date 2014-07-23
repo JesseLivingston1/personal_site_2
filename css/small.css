@@ -287,18 +287,21 @@ h3, #logo {
 .side-nav {
     position: fixed;
     top: 0;
-    right: -25%;
-    padding-top: 1em;
+    right: -45%;
+    padding-top: 1.2em;
     height: 100%;
-    width: 25%;
+    width: 45%;
     overflow-y: hidden;
     -webkit-transition: all 0.7s;
     -moz-transition: all 0.7s;
     transition: all 0.7s;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
     display: block;
-    margin-top: 100px;
+    margin-top:75px;
     z-index:5;
     background-color: #22A301;
+
  
 }
 
@@ -312,39 +315,38 @@ h3, #logo {
 }
 
 .secondary-header {
-    height:100px;
+    height:75px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .menu-in {
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-    transform: translateX(-100%);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
 }
 
 .shift {
-    -webkit-transform: translateX(-25%);
-    -moz-transform: translateX(-25%);
-    -ms-transform: translateX(-25%);
-    -o-transform: translateX(-25%);
-    transform: translateX(-25%);
+    -webkit-transform: translate3d(-45%, 0, 0);
+    -moz-transform: translate3d(-45%, 0, 0);
+    -ms-transform: translate3d(-45%, 0, 0);
+    -o-transform: translate3d(-45%, 0, 0);
+    transform: translate3d(-45%, 0, 0);
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
 }
 
 .side {
     -webkit-transition-duration: 0.7s;
     -moz-transition-duration: 0.7s;
     transition-duration: 0.7s;
-    -webkit-transition-property: -webkit-transform,opacity;
-    -moz-transition-property: -moz-transform,opacity;
-    transition-property: transform,opacity;
-}
-
-.show{
-    display:block;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
 }
 
 .side-nav {
@@ -817,16 +819,6 @@ header nav {
     display: block;
     float: left;
     text-align: center;
-}
-
-.navitem span:after{
-
-}
-
-.navitem:hover {
-    cursor:pointer;
-    text-decoration: underline;
-    transition: all 0.2s ease 0s;
 }
 
 #hwrap {
