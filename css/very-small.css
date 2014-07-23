@@ -580,7 +580,7 @@ header {
     color:white;
 }
 
-#work .box:hover .content{
+#work .box:hover .content {
     opacity: 1;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
